@@ -237,4 +237,4 @@ release-candidate-test: check-clean check-master publish-test
 release-minor: check-release bumpversion-minor release
 
 .PHONY: release-major
-release-major: check-release bumpversion-major release
+release-major: check-release bumpversion-major release 
