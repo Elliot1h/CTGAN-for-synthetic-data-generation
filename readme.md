@@ -38,11 +38,14 @@ discrete_columns = [
     'income'
 ]
 
+# Names of the columns that are dates
+date_columns = []
+
 ctgan = CTGAN(epochs=10)
-ctgan.fit(real_data, discrete_columns)
+ctgan.fit(real_data, discrete_columns, date_columns)
 
 # Create synthetic data
-synthetic_data = ctgan.sample(1000)
+synthetic_data = ctgan.sample(1000, date_columns)
 ```
 
 *For more information about the dataset see:
