@@ -7,34 +7,12 @@ For more information please see https://github.com/sdv-dev/CTGAN.
 
 Currently, this library implements the **CTGAN** and **TVAE** models described in the [Modeling Tabular data using Conditional GAN](https://arxiv.org/abs/1907.00503) paper, presented at the 2019 NeurIPS conference.
 
-# Install
-
-## Use CTGAN through the SDV library
-
-:warning: If you're just getting started with synthetic data, we recommend installing the SDV library which provides user-friendly APIs for accessing CTGAN. :warning:
-
-The SDV library provides wrappers for preprocessing your data as well as additional usability features like constraints. See the [SDV documentation](https://bit.ly/sdv-docs) to get started.
-
-## Use the CTGAN standalone library
-
-Alternatively, you can also install and use **CTGAN** directly, as a standalone library:
-
-**Using `pip`:**
-
-```bash
-pip install ctgan
-```
-
-**Using `conda`:**
-
-```bash
-conda install -c pytorch -c conda-forge ctgan
-```
 
 When using the CTGAN library directly, you may need to manually preprocess your data into the correct format, for example:
 
 * Continuous data must be represented as floats
 * Discrete data must be represented as ints or strings
+* Date feature should be represented as 2021-03-07
 * The data should not contain any missing values
 
 # Usage Example
