@@ -454,7 +454,6 @@ class CTGAN(BaseSynthesizer):
 
     def date_inverse_transform(self, data, date_columns = []):
         data_copy = data.copy()
-        month_day_dic = {1:31,2:28,}
         n = len(data)
         for date_col in date_columns:
             data_copy[date_col] = ''
