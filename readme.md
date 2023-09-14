@@ -4,7 +4,6 @@ On top of CTGAN, we added cyclical data transformation for date features.
 
 For more information please see https://github.com/sdv-dev/CTGAN.
 
-
 Currently, this library implements the **CTGAN** and **TVAE** models described in the [Modeling Tabular data using Conditional GAN](https://arxiv.org/abs/1907.00503) paper, presented at the 2019 NeurIPS conference.
 
 
